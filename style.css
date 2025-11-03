@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Varela+Round&display=swap');
+body{
+    background-color:antiquewhite;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} 
+
+nav{
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+}
+nav ul
+{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 55px;
+    background-color: black;
+    color: white;
+}
+nav ul li{
+    margin: 0 15px;
+    padding: 0px 1px;
+    font-size: 15px;
+    /* cursor: pointer; */
+}       
+/* nav ul li:hover{
+
+    text-decoration: underline;
+    color: #ae89f4;
+} */
+/* nav ul li a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+} */
+.brand img{
+    height: 45px;
+    width: 60px;
+    border-radius: 50%;
+    padding: 0 6px ;
+
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    gap: 7px;
+    font-size: 1.3rem;
+}
+.bottom{
+    position: sticky;
+    background-color: black;
+    margin-top: 25px;
+    height: 85px;
+    bottom: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+}
+.container{
+    min-height: 68vh;
+    background-color: black;
+    color: white;
+    display: flex;  
+    font-family: 'Varela Round', sans-serif;
+    margin: 25px auto;
+    width: 80vw;
+    border-radius: 15px;
+    padding: 20px;
+    background-image: url('bg1.jpg');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.container h1{
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+#myProgressBar{
+    width: 80%;
+    align-items: left;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.icons{
+    display: flex;
+    gap: 20px;
+    font-size: 1.5rem;
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+.icons i{
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.icons i:hover{
+    color: #ae89f4;
+}
+.songItem{
+    height:50px;
+    display: flex;
+    background-color:white;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0;
+    border-radius: 20px;
+}
+.songItem img{
+    height: 40px;
+    width: 40px;
+    margin: 0 15px;
+    border-radius: 40px; 
+    /* box-sizing: border-box; */
+}
+.songname{
+    font-size: 15px;
+    font-weight: 80;       
+    margin-right: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.timestamp{
+    margin-right: 20px;
+}
+.songlistplay i{
+    font-size: 1.1rem;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-size: 12px;
+    margin-top: 20px;
+    font-family: 'Varela Round', sans-serif;
+    color: lightseagreen;
+}
+.songInfo img{
+    margin-right: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
